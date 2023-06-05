@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --cor-1: #3D3D3D;
+    --cor-2: #ececec;
+    --cor-3: #1FBEC4;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit';
+    font-weight: 200;
+    transition-timing-function: linear;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--cor-2);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to bottom, var(--cor-3), var(--cor-1));
+    /* background-color: var(--cor-3); */
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-1);
+    transition: background 1s;
+}
+
+h1, h2, h3, h4{
+    font-weight: 400;
+}
+
+h3, p{
+    color: var(--cor-2);
+}
+
+section:not(#home, #menu){
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+}
+
+img{
+    box-shadow: 2px 2px 5px 0px rgba(61, 61, 61, 0.5);
+    border-radius: 10px;
+}
+
+[skill]{
+    color: var(--cor-3);
+}
+
+[skill]:hover::after{
+    color: var(--cor-2);
+}
+
+.list{
+    display: flex;
+    gap: 20px;
+}
+
+.list li{
+    list-style: none;
+    font-size: 24px;
+    position: relative;
+    text-transform: uppercase;
+    transition: transform .5s;
+}
+
+.list li:hover{
+    transform: scale(1.1);
+}
+
+.list li:hover::after{
+    content: attr(skill);
+    width: 100%;
+    font-size: 12px;
+    position: absolute;
+    left: 0; right: 0;
+    margin: 0 auto;
+    bottom: -12px;
+}
+
+.list li a{
+    text-decoration: none;
+    color: var(--cor-2);
+    font-weight: 400;
+}
+
+.button-link{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--cor-3);
+    padding: 5px 20px;
+    border-radius: 10px;
+}

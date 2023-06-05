@@ -1,0 +1,16 @@
+#toggle-background{
+    width: 48px;
+    height: 18px;
+    background-color: var(--cor-3);
+    border: 2px solid var(--cor-1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#toggle-background-circle{
+    width: 50%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: var(--cor-2);
+    transition: transform 1s;
+}

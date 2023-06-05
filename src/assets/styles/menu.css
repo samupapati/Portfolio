@@ -1,0 +1,39 @@
+#menu{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-3);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+#menu-items{
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-links-list li{
+    font-weight: bold;
+}
+
+.menu-links-list .link{
+    display: flex;
+}
+
+.menu-links-list .link-text{
+    font-size: 16px;
+}
+
+.menu-links-list .link-icon{
+    font-size: 20px;
+}
+
+#menu-check, #menu-btn-hamburguer{
+    display: none;
+}

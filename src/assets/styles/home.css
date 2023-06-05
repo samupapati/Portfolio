@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+
+#home{
+    width: 100vw;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, var(--cor-3), transparent);
+}
+
+#home-titles{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-2);
+}
+
+#home-titles-name{
+    font-size: 80px;
+    font-family: 'Kanit';
+    font-weight: bold;
+}
+
+#home-titles-career{
+    font-size: 32px;
+    font-family: 'Kanit';
+    font-weight: 100;
+}
