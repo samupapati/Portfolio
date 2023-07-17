@@ -1,0 +1,70 @@
+@media all and (min-width: 0px){
+    #certifications{
+        width: 100vw;
+        max-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #certifications-title{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 32px;
+    }
+    #certifications-boxes{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .certifications-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        width: 250px;
+        height: 200px;
+        text-align: center;
+        background-color: transparent;
+        box-shadow: 0px 0px 2px 2px var(--cor-3);
+        border-radius: 10px;
+    }
+    .certifications-box:nth-child(2){
+        align-self: center;
+    }
+    .certifications-box:last-child{
+        align-self: flex-end;
+    }
+    .certifications-box h4{
+        color: var(--cor-2);
+        font-size: 18px;
+    }
+    .certifications-box h5{
+        color: var(--cor-2);
+        font-size: 16px;
+    }
+    .certifications-box ul{
+        list-style-type: circle;
+        text-align: left;
+    }
+    .certifications-box li{
+        color: var(--cor-2);
+    }
+    .certifications-box li::marker{
+        color: var(--cor-3);
+    }
+
+    .certifications-box:nth-child(2) h5{
+        font-size: 15px;
+    }
+}
+
+@media all and (min-width: 869px){
+    #certifications-boxes{
+        height: 300px;
+    }
+}

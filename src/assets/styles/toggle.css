@@ -1,6 +1,6 @@
 #toggle-background{
     width: 48px;
-    height: 18px;
+    height: 16px;
     background-color: var(--cor-3);
     border: 2px solid var(--cor-1);
     border-radius: 50px;

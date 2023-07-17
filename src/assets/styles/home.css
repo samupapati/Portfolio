@@ -1,32 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
 
-#home{
-    width: 100vw;
-    height: calc(100vh - 50px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom, var(--cor-3), transparent);
+@media all and (min-width: 0px){
+    #home{
+        width: 100vw;
+        height: calc(100vh - 50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, var(--cor-3), transparent);
+    }
+    #home-content{
+        width: 100vw;
+        max-width: 1024px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 16px;
+    }
+    #home-texts{
+        max-width: 710px;
+    }
+    #saudacoes{
+        color: var(--cor-2);
+        font-weight: 200;
+    }
+    #home-titles-name-career{
+        font-size: 40px; /* estava 56px*/
+        font-weight: bold;
+        line-height: 56px;
+        color: var(--cor-2);
+        margin-bottom: 8px;
+    }
+    #home-titles-name-career .detail{
+        color: var(--cor-3);
+        font-weight: bold;
+    }
+    #home-paragraph{
+        max-width: 520px;
+        margin-bottom: 16px;
+    }
+    #avatar{
+        box-shadow: none;
+        border-radius: 0;
+        user-select: none;
+        z-index: 1;
+        display: none;
+    }
+    #avatar-chao{
+        position: absolute;
+        width: 120px;
+        height: 70px;
+        right: 20px;
+        bottom: 20px;
+        display: none;
+    }
+    #avatar-chao-chao{
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(#505050, gray);
+        transform: rotate(20deg) skew(-50deg);
+    }
+    #avatar-chao-esquerdo{
+        width: 100%;
+        height: 20px;
+        transform: rotate(20deg) skew(20deg);
+        position: absolute;
+        right: 50px;
+        bottom: -4px;
+        background-color: #888888;
+    }
+    #avatar-chao-direito{
+        width: 88%;
+        height: 20px;
+        transform: rotate(-20deg) skew(-20deg);
+        position: absolute;
+        right: -49px;
+        bottom: -6px;
+        background-image: linear-gradient(to right, #7D7D7D, #424242);
+    }
 }
 
-#home-titles{
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--cor-2);
+@media all and (min-width: 768px){
+    #home-titles-name-career{
+        font-size: 56px;
+    }
+    #home-paragraph{
+        max-width: 710px;
+    }
 }
 
-#home-titles-name{
-    font-size: 80px;
-    font-family: 'Kanit';
-    font-weight: bold;
+@media all and (min-width: 900px){
+    #avatar{
+        display: initial;
+    }
+    #avatar-chao{
+        display: initial;
+    }
 }
 
-#home-titles-career{
-    font-size: 32px;
-    font-family: 'Kanit';
-    font-weight: 100;
-}
+
