@@ -4,7 +4,7 @@
 
 ### Links
 
-[Deploy](https://samupapati.github.io/portfolio/)
+[Deploy](https://samupapati.github.io/Portfolio/)
 
 ### Feito com
 
