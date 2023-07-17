@@ -1,6 +1,6 @@
-import '../assets/styles/skills.css'
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaSass, FaReact, FaFigma } from 'react-icons/fa'
 import { TbApi } from 'react-icons/tb'
+import {SiStyledcomponents} from 'react-icons/si'
 
 function Skills( {skillsToBeUsed} ){
     const skills = {
@@ -11,6 +11,7 @@ function Skills( {skillsToBeUsed} ){
         REACT: <li skill="REACT" className='skill-item'><FaReact/></li>,
         FIGMA: <li skill="FIGMA" className='skill-item'><FaFigma/></li>,
         API: <li skill="API" className='skill-item'><TbApi/></li>,
+        "STYLED-COMPONENTS": <li skill="STYLED COMPONENTS" className='skill-item'><SiStyledcomponents/></li>
     }
 
     return(
